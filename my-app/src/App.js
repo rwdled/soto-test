@@ -1,22 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'
+import BookCatalog from './BookCatalog';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to My Book Catalog</h1>
+       
+        
+          <p>Click here to view the book catalog</p>
+          <a href="/book-catalog" style={{ color: 'white', textDecoration: 'none' }}>
+            Go to Book Catalog
+            <main>
+              
+            </main>
+          </a>
+          <BookCatalog />
+        <p>Explore a wide range of books and authors.</p>
+        <p>Discover your next favorite read!</p>
+        <p>Happy reading!</p>
       </header>
     </div>
   );
